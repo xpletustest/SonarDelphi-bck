@@ -5,7 +5,7 @@
 
 
 	<artifactId>sonar-delphi-plugin</artifactId>
-	<version>1.0.3</version>
+	<version>1.0.7</version>
 	<groupId>org.delphi.plugin</groupId>
 	<name>Sonar Delphi Plugin</name>
 	<description>Enables analysis of Delphi projects.</description>
@@ -69,11 +69,11 @@
 
 	<issueManagement>
 		<system>GitHub</system>
-		<url>https://github.com/fabriciocolombo/sonar-delphi/issues</url>
+		<url>https://github.com/JAM-Software/sonar-delphi/issues</url>
 	</issueManagement>
 	<ciManagement>
-		<system>Travis</system>
-		<url>https://travis-ci.org/fabriciocolombo/sonar-delphi</url>
+		<system>GitHub</system>
+		<url>https://github.com/JAM-Software/SonarDelphi/actions</url>
 	</ciManagement>
 
 	<properties>

@@ -1,16 +1,16 @@
-[![Build Status](https://travis-ci.org/ekot1/SonarDelphi.svg?branch=master)](https://travis-ci.org/ekot1/SonarDelphi)
+![Java CI with Maven](https://github.com/JAM-Software/SonarDelphi/workflows/Java%20CI%20with%20Maven/badge.svg)
 
 # SonarQube Delphi
 
 Is a SonarQube (http://www.sonarqube.org/) plugin and provides
   * 49 Rules for Delphi
-  * TestCoverage using DelphiCodeCoverage or AQtime (license needed)
+  * TestCoverage using [DelphiCodeCoverage](https://sourceforge.net/projects/delphicodecoverage/) or AQtime (license needed)
    * Optional .html output for TestCoverage
   * Unittests results using DUnitX
 
 This is Plugin-Version 1.0 SonarQube 7.9(LTS) or higher is needed (tested with SonarQube 7.9.3 and 8.2.0)
-It is is mainly an updated version of https://github.com/fabriciocolombo/sonar-delphi all credit goes to them.
-I have hosted it here since the orignal developer isn't active anymore.
+It is is mainly an updated version of https://github.com/fabriciocolombo/sonar-delphi and https://github.com/mendrix/SonarDelphi, all credit goes to them.
+JAM Software has created its own fork in order to fix issues seen with our Delphi code.
 
 This plugin was originally a [Sabre Airline Solutions](http://www.sabreairlinesolutions.com/home/) donation.
 
@@ -57,11 +57,10 @@ requests. If you want to raise an issue, please follow the recommendations below
   
 # Steps to Analyze a Delphi Project
 
-1. Install SonarQube Server (see [Setup and Upgrade](http://docs.sonarqube.org/display/SONAR/Setup+and+Upgrade) for more details). Check supported versions of the [latest release](https://github.com/fabriciocolombo/sonar-delphi/releases/latest) of the plugin.
+1. Install SonarQube Server (see [Setup and Upgrade](http://docs.sonarqube.org/display/SONAR/Setup+and+Upgrade) for more details). Check supported versions of the [latest release](https://github.com/JAM-Software/sonar-delphi/releases/latest) of the plugin.
 2. Install one of the supported [Runners](#supported-runners) (see below) and be sure you can call it from the directory where you have your source code
-3. Install [Delphi Plugin](https://github.com/mendrix/SonarDelphi/releases) (see [Installing a Plugin](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin)  for more details).
- NOTE: This only applies to SonarQube 7.9(LTS) and heigher. For older versions see [Delphi Plugin](https://github.com/fabriciocolombo/sonar-delphi/releases)
-4. Check the sample project corresponding to your Runner to know which config file you need to create. You can find the samples in [sonar-delphi/samples](https://github.com/fabriciocolombo/sonar-delphi/tree/master/samples).
+3. Install [Delphi Plugin](https://github.com/JAM-Software/SonarDelphi/releases) (see [Installing a Plugin](http://docs.sonarqube.org/display/SONAR/Installing+a+Plugin)  for more details).
+4. Check the sample project corresponding to your Runner to know which config file you need to create. You can find the samples in [sonar-delphi/samples](https://github.com/JAM-Software/sonar-delphi/tree/master/samples).
 5. Run your Analyzer command from the project root dir
 6. Follow the link provided at the end of the analysis to browse your project's quality in SonarQube UI (see: [Browsing SonarQube](http://docs.sonarqube.org/display/SONAR/Browsing+SonarQube))
 
@@ -70,7 +69,6 @@ requests. If you want to raise an issue, please follow the recommendations below
  To run an analysis of your Java project, you can use the following Runners:
 
 * [SonarQube Scanner](http://docs.sonarqube.org/display/SCAN/Analyzing+with+SonarQube+Scanner): recommended for all projects 
-* See https://github.com/fabriciocolombo/sonar-delphi for diffrent approacheds which have not been tested yet with 0.3.4
 
 ## Code Assumptions
 
